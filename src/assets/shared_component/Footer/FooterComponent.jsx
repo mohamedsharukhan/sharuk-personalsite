@@ -10,7 +10,7 @@ import { IoLocationSharp } from "react-icons/io5";
 function FooterComponent() {
   return (
     <main className="flex flex-row justify-center ">
-      <section className=" w-svw bottom-0 z-20">
+      <section className=" w-full bottom-0 z-20">
         <div>
           <Footer
             color="green-700 "

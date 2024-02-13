@@ -5,7 +5,7 @@ import profilePic from "../../../../public/IMG_0312.jpg";
 function NavbarComponent() {
   return (
     <main className="flex justify-center overflow-hidden ">
-      <section className="  w-svw fixed z-10">
+      <section className="  w-full fixed z-10">
         <div>
           <Navbar
             fluid
