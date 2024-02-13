@@ -17,9 +17,9 @@ function FooterComponent() {
             className=" bg-green-100 px-3  rounded pt-4 lg:text-3xl justify-around border-2 border-green-700 shadow-slate-500  "
           >
             <div iv className="w-full">
-              <div className="grid w-full justify-center sm:flex sm:justify-between md:flex md:grid-cols-1 ">
-                <div className="grid justify-center ">
-                  <div className="flex gap-3 md:py-6  ">
+              <div className="grid w-full justify-center justify-items-center items-center sm:flex sm:justify-between md:flex md:grid-cols-1 ">
+                <div className="grid justify-center  gap-5">
+                  <div className="flex gap-x-4 md:py-6  ">
                     <Avatar
                       className="cursor-zoom-in"
                       alt="User Profile"
@@ -30,10 +30,10 @@ function FooterComponent() {
                       Mohamed Sharukhan
                     </span>
                   </div>
-                  <p className=" hover:text-green-400 dark:text-gray-400 flex justify-center align-middle content-center gap-4 text-wrap">
+                  <p className=" hover:text-green-400 dark:text-gray-400 flex justify-center align-middle content-center gap-x-4 text-wrap">
                     {" "}
                     <span>
-                      <IoLocationSharp />
+                      <IoLocationSharp className="w-6 h-6"/>
                     </span>{" "}
                     <span>
                       8/124,Thiruvithamcode,
