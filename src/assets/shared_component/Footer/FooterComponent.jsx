@@ -30,12 +30,12 @@ function FooterComponent() {
                       Mohamed Sharukhan
                     </span>
                   </div>
-                  <p className=" hover:text-green-400 dark:text-gray-400 flex justify-center align-middle content-center gap-x-4 text-wrap">
+                  <p className=" hover:text-green-400 dark:text-gray-400 flex justify-center  align-middle content-center gap-x-4 text-wrap">
                     {" "}
                     <span>
                       <IoLocationSharp className="w-6 h-6"/>
                     </span>{" "}
-                    <span>
+                    <span className="text-sm">
                       8/124,Thiruvithamcode,
                       <br />
                       Kanniyakumari. <br />

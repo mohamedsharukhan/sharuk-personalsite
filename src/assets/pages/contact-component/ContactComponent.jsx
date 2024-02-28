@@ -23,7 +23,7 @@ function ContactComponent() {
           to_name: "Mohamed Shaukhan",
           to_email: "mohamedshaukhan19@gmail.com",
           from_name: data.name,
-          from_email: data.email1,
+          from_email: data.email,
           phone_number: data.phone,
           subject: data.subject,
           message: data.message,
@@ -114,14 +114,14 @@ function ContactComponent() {
                     )}
                   </div>
                   <div className="grid gap-y-3">
-                    <Label htmlFor="email1" value="EMAIL" color="success" />
+                    <Label htmlFor="email" value="EMAIL" color="success" />
                     <TextInput
-                      id="email1"
+                      id="email"
                       type="email"
                       color="info"
                       placeholder="name@gmail.com"
                       required
-                      {...register("email1")}
+                      {...register("email")}
                     />
                     {errors.email1 && (
                       <span className="text-red-500">
