@@ -1,7 +1,11 @@
 import React from "react";
 import { Card, Tabs } from "flowbite-react";
 import educationpic from "../../../../public/education.jpg";
+import certificate from "../../../../public/certificate_Sharuk.jpg";
+import experience from "../../../../public/certificate_experience.jpg";
+import degree from "../../../../public/certificate_degree.jpg";
 import workpic from "../../../../public/work.jpg";
+import { BsArrowRightCircle } from "react-icons/bs";
 
 function ResumeComponent() {
   const resume = [
@@ -15,6 +19,7 @@ function ResumeComponent() {
           course: "BACHELOR OF COMMERCE (B.COM)",
           university: "Manonmaniam Sundaranar University",
           collage: "Noorul Islam College Of Arts And Science, Kanniyakumari",
+          file: degree,
         },
         {
           img: educationpic,
@@ -22,6 +27,7 @@ function ResumeComponent() {
           course: "MERN STACK WEB DEVELOPMENT",
           university: "REX CODERS ACADEMY",
           collage: "",
+          file: certificate,
         },
       ],
     },
@@ -35,6 +41,7 @@ function ResumeComponent() {
           role: "FULLSTACK DEVELOPER - INTERN ",
           company: "REXKNAR CREATIVE SOLUTIONS. ",
           place: "Nagercoil.",
+          file: experience,
         },
       ],
     },
@@ -86,6 +93,13 @@ function ResumeComponent() {
                               {detail.collage || detail.place}
                             </span>
                           </p>
+
+                          <BsArrowRightCircle
+                            className="hover:animate-bounce w-6 h-6 text-green-700 hover:text-green-900"
+                            onClick={() => {
+                              window.location.href = detail.file;
+                            }}
+                          />
                         </Card>
                       ))}
                     </div>

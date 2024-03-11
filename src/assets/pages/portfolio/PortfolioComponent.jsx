@@ -8,7 +8,19 @@ function PortfolioComponent() {
       img: "",
       title: "PERSONAL WEBSITE",
       skills: "HTML, CSS, TAILWIND CSS, JAVASCRIPT, REACT JS",
-      link: "",
+      link: "https://sharuk-personalsite.vercel.app/",
+    },
+    {
+      img: "",
+      title: "IZHTECH WEBSITE",
+      skills: "HTML, TAILWIND CSS, TYPESCRIPT, REACT JS",
+      link: "https://www.izhtech.com/",
+    },
+    {
+      img: "",
+      title: "FOOD BLOG",
+      skills: "HTML, CSS, BOOTSTRAP, JAVASCRIPT, REACT JS",
+      link: "https://food-blog-rosy.vercel.app/",
     },
     {
       img: "",
@@ -16,18 +28,6 @@ function PortfolioComponent() {
       skills:
         "HTML, TAILWIND CSS, JAVASCRIPT, REACT JS, REDUX, NODE JS, EXPRESS JS, SQL",
       link: "",
-    },
-    {
-      img: "",
-      title: "IZHTECH WEBSITE",
-      skills: "HTML, TAILWIND CSS, TYPESCRIPT, REACT JS",
-      link: "",
-    },
-    {
-      img: "",
-      title: "FOOD BLOG",
-      skills: "HTML, CSS, BOOTSTRAP, JAVASCRIPT, REACT JS",
-      link: "https://food-blog-rosy.vercel.app/",
     },
     {
       img: "",
