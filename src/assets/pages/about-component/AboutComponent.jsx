@@ -24,10 +24,11 @@ function AboutComponent() {
               <h2 className="text-3xl md:text-4xl text-green-700 font-bold googlefont shadow-slate-600 text-center dark:text-green-500 hover:animate-bounce  pt-9">
                 About Me
               </h2>
-              <p className=" lg:text-2xl font-thin text-slate-600  text-balance text-center dark:text-slate-500">
-                Belief in teamwork, Initiative, Hard work, Sincerity, and the
-                will to carry out the assignment in the specified time limit
+             <div className="text-center ">
+             <p className=" lg:text-2xl font-thin text-slate-600  text-balance  dark:text-slate-500">
+              Enthusiastic MERN Stack Developer with a passion for crafting dynamic web solutions. Possessing a solid grasp of MongoDB, Express.js, React.js, and Node.js, I bring strong problem-solving skills and a collaborative spirit to every project. Eager to contribute to innovative initiatives while further honing expertise in web development
               </p>
+             </div>
               <div className="flex justify-center">
                 <ul className="flex flex-col sm:justify-center gap-6 xl:text-2xl md:p-2 lg:gap-y-12 ">
                   <li className="flex gap-3">
@@ -70,8 +71,12 @@ function AboutComponent() {
                       Email <span>:</span>
                     </span>
                     <span className="  hover:text-green-700 dark:text-gray-400">
-                      {" "}
-                      mohamedsharukhan@gmail.com
+                      <a
+                        href="mailto:mohamedsharukhan@gmail.com"
+                        target="_blank"
+                      >
+                        mohamedsharukhan@gmail.com
+                      </a>
                     </span>
                   </li>
                   <li className="flex gap-3">
@@ -79,8 +84,7 @@ function AboutComponent() {
                       Phone <span>:</span>
                     </span>
                     <span className="hover:text-green-700 dark:text-gray-400">
-                      {" "}
-                      +918220095803
+                      <a href="tel:+918220095803">+918220095803</a>
                     </span>
                   </li>
                   <li className="flex justify-center">

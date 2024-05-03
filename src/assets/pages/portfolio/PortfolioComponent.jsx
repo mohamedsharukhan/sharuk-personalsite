@@ -1,48 +1,9 @@
 import React from "react";
 import { Card } from "flowbite-react";
 import { BsArrowRightCircle } from "react-icons/bs";
-
+import { projects } from "./project";
 function PortfolioComponent() {
-  const project = [
-    {
-      img: "",
-      title: "PERSONAL WEBSITE",
-      skills: "HTML, CSS, TAILWIND CSS, JAVASCRIPT, REACT JS",
-      link: "https://sharuk-personalsite.vercel.app/",
-    },
-    {
-      img: "",
-      title: "IZHTECH WEBSITE",
-      skills: "HTML, TAILWIND CSS, TYPESCRIPT, REACT JS",
-      link: "https://www.izhtech.com/",
-    },
-    {
-      img: "",
-      title: "FOOD BLOG",
-      skills: "HTML, CSS, BOOTSTRAP, JAVASCRIPT, REACT JS",
-      link: "https://food-blog-rosy.vercel.app/",
-    },
-    {
-      img: "",
-      title: "E-COMMERCE WEBSITE",
-      skills:
-        "HTML, TAILWIND CSS, JAVASCRIPT, REACT JS, REDUX, NODE JS, EXPRESS JS, SQL",
-      link: "",
-    },
-    {
-      img: "",
-      title: "TODO LIST",
-      skills: "HTML, CSS, BOOTSTRAP, JAVASCRIPT, REACT JS",
-      link: "",
-    },
-    {
-      img: "",
-      title: "CHESS BOARD",
-      skills: "HTML, CSS, JAVASCRIPT",
-      link: "",
-    },
-  ];
-
+  const project = projects;
   return (
     <main className="flex justify-center" id="portfolio">
       <section className="container bg-green-50 ">
@@ -53,17 +14,18 @@ function PortfolioComponent() {
               My Portfolio
             </h2>
             <Card className="shadow-white bg-green-50">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9  justify-center ">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9  justify-center hover:z-50 hover: ">
                 {project.map((data, index) => (
                   <div key={index}>
                     <Card
-                      className="max-w-sm min-w-[15rem] h-[20rem] shadow-white bg-green-50 border-2 grid justify-start  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-green-300 duration-300"
+                      className="max-w-sm min-w-[15rem] min-h-[20rem] shadow-white bg-green-50 border-2 grid justify-start  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-green-300 duration-300 group      "
                       imgAlt="project img"
                       imgSrc={""}
                     >
                       <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white hover:text-green-700">
                         {data.title}
                       </h5>
+
                       <p className="font-normal text-gray-700 dark:text-gray-400 grid ">
                         <span className="text-nowrap font-semibold">
                           Skills Utilized:
@@ -73,6 +35,16 @@ function PortfolioComponent() {
                           {data.skills}
                         </span>
                       </p>
+                      <p className="font-normal text-gray-700 dark:text-gray-400 
+                      hidden group-hover:block  ">
+                        <span className="text-nowrap font-semibold ">
+                          Professional Summary:
+                        </span>
+                        <span className="hover:text-green-900 ">
+                          {data.ProfessionalSummary}
+                        </span>
+                      </p>
+
                       <a
                         href={data.link}
                         target="_blank"
