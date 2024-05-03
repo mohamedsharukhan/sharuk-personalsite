@@ -50,10 +50,10 @@ function FooterComponent() {
                       className="hover:text-green-700"
                     />
                     <Footer.LinkGroup col>
-                      <Footer.Link href="#" className="hover:text-green-700">
+                      <Footer.Link href="/contact" className="hover:text-green-700">
                         Contact
                       </Footer.Link>
-                      <Footer.Link href="#" className="hover:text-green-700">
+                      <Footer.Link href="/about" className="hover:text-green-700">
                         About
                       </Footer.Link>
                     </Footer.LinkGroup>
