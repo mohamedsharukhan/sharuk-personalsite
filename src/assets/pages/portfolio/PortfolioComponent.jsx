@@ -30,17 +30,17 @@ function PortfolioComponent() {
                         <span className="text-nowrap font-semibold">
                           Skills Utilized:
                         </span>
-                        <span className=" hover:text-green-900 ">
+                        <span className=" hover:text-green-400 ">
                           {" "}
                           {data.skills}
                         </span>
                       </p>
-                      <p className="font-normal text-gray-700 dark:text-gray-400 
+                      <p className="font-normal text-gray-400 dark:text-gray-400 
                       hidden group-hover:block  ">
                         <span className="text-nowrap font-semibold ">
                           Professional Summary:
                         </span>
-                        <span className="hover:text-green-900 ">
+                        <span className="hover:text-green-400 ">
                           {data.ProfessionalSummary}
                         </span>
                       </p>
