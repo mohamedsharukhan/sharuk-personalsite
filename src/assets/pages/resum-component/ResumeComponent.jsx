@@ -35,28 +35,30 @@ function ResumeComponent() {
                           imgSrc={detail.img}
                           horizontal
                         >
-                          <p className=" font-semibold text-gray-700 dark:text-gray-400 flex text-wrap hover:text-green-400">
+                          <p className=" font-semibold text-gray-700 dark:text-gray-400 flex text-wrap hover:text-green-700 hover:dark:text-green-400">
                             {detail.year}
                           </p>
-                          <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white hover:text-green-700">
+                          <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white hover:text-green-700 hover:dark:text-green-500">
                             {detail.course || detail.role}
                           </h5>
-                          <p className="font-normal text-gray-700 dark:text-gray-400 flex p">
-                            <span className="text-wrap hover:text-green-400">
+                          <p className="font-normal text-gray-700 dark:text-gray-400 flex ">
+                            <span className="text-wrap hover:text-green-700 hover:dark:text-green-400">
                               {detail.university || detail.company}
                             </span>
                           </p>
                           <p className="font-normal text-gray-700 dark:text-gray-400 flex text-wrap">
-                            <span className="text-wrap hover:text-green-400">
+                            <span className="text-wrap hover:text-green-700 hover:dark:text-green-400">
                               {detail.collage || detail.place}
                             </span>
                           </p>
                           <p className="font-normal text-gray-700 dark:text-gray-400 flex text-wrap">
-                            {detail.summary}
+                          <span className="text-wrap hover:text-green-700 hover:dark:text-green-400">
+                          {detail.summary}
+                            </span>                          
                           </p>
 
                           <BsArrowRightCircle
-                            className="hover:animate-bounce w-6 h-6 text-green-700 hover:text-green-900"
+                            className="hover:animate-bounce w-8 h-8 text-green-700 hover:text-green-900 hover:dark:text-green-400"
                             onClick={() => {
                               window.location.href = detail.file;
                             }}

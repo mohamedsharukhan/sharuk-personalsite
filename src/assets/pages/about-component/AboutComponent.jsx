@@ -4,9 +4,7 @@ import resume from "../../../../public/Sharukhan -Resume.pdf";
 import aboutpic from "../../../../public/profile-img.png.png";
 
 function AboutComponent() {
-  const handleDownload = () => {
-    window.location.href = resume;
-  };
+ 
   return (
     <main className=" flex justify-center align-middle " id="about">
       <section className=" container bg-green-50">
@@ -25,17 +23,17 @@ function AboutComponent() {
                 About Me
               </h2>
              <div className="text-center ">
-             <p className=" lg:text-2xl font-thin text-slate-600  text-balance  dark:text-slate-500">
+             <p className=" lg:text-2xl font-thin text-slate-600  text-balance  dark:text-white hover:dark:text-green-200 hover:text-green-700">
               Enthusiastic MERN Stack Developer with a passion for crafting dynamic web solutions. Possessing a solid grasp of MongoDB, Express.js, React.js, and Node.js, I bring strong problem-solving skills and a collaborative spirit to every project. Eager to contribute to innovative initiatives while further honing expertise in web development
               </p>
              </div>
               <div className="flex justify-center">
                 <ul className="flex flex-col sm:justify-center gap-6 xl:text-2xl md:p-2 lg:gap-y-12 ">
                   <li className="flex gap-3">
-                    <span className=" font-semibold flex justify-between sm:w-40 dark:text-white">
+                    <span className=" font-semibold flex justify-between sm:w-40 dark:text-white ">
                       Name <span className=" text-end">:</span>
                     </span>
-                    <span className="hover:text-green-700 dark:text-gray-400">
+                    <span className="hover:text-green-500 dark:text-white  hover:dark:text-green-200 ">
                       {" "}
                       Mohamed Sharukhan M
                     </span>
@@ -44,7 +42,7 @@ function AboutComponent() {
                     <span className=" font-semibold sm:w-40 flex justify-between dark:text-white">
                       Date of birth <span>:</span>
                     </span>
-                    <span className="hover:text-green-700 dark:text-gray-400">
+                    <span className="hover:text-green-500 dark:text-white  hover:dark:text-green-200">
                       {" "}
                       19/03/1995
                     </span>
@@ -53,7 +51,7 @@ function AboutComponent() {
                     <span className=" font-semibold sm:w-40 flex justify-between dark:text-white">
                       Address <span>:</span>
                     </span>
-                    <span className="hover:text-green-700 dark:text-gray-400">
+                    <span className="hover:text-green-500 dark:text-white  hover:dark:text-green-200">
                       Tamilnadu,INDIA
                     </span>
                   </li>
@@ -61,7 +59,7 @@ function AboutComponent() {
                     <span className=" font-semibold sm:w-40 flex justify-between dark:text-white">
                       Zip code <span>:</span>
                     </span>
-                    <span className="hover:text-green-700 dark:text-gray-400">
+                    <span className="hover:text-green-500 dark:text-white  hover:dark:text-green-200">
                       {" "}
                       629174
                     </span>
@@ -70,7 +68,7 @@ function AboutComponent() {
                     <span className=" font-semibold sm:w-40 text-nowrap flex justify-between dark:text-white">
                       Email <span>:</span>
                     </span>
-                    <span className="  hover:text-green-700 dark:text-gray-400">
+                    <span className="  hover:text-green-500 dark:text-white  hover:dark:text-green-200">
                       <a
                         href="mailto:mohamedsharukhan@gmail.com"
                         target="_blank"
@@ -83,19 +81,19 @@ function AboutComponent() {
                     <span className=" font-semibold sm:w-40 flex justify-between dark:text-white">
                       Phone <span>:</span>
                     </span>
-                    <span className="hover:text-green-700 dark:text-gray-400">
+                    <span className="hover:text-green-500 dark:text-white  hover:dark:text-green-200">
                       <a href="tel:+918220095803">+918220095803</a>
                     </span>
                   </li>
                   <li className="flex justify-center">
-                    <Button
-                      onClick={handleDownload}
+                    <a href={resume} target="_blank dawnload"> <Button
                       className="w-fit"
                       gradientDuoTone="greenToBlue"
                       size="lg"
+                      target="_blank" 
                     >
                       Download CV
-                    </Button>
+                    </Button></a>
                   </li>
                 </ul>
               </div>

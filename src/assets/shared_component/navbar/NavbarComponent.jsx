@@ -11,7 +11,7 @@ function NavbarComponent() {
             fluid
             rounded
             color="green-700"
-            className=" bg-green-100 dark:bg-black lg:p-4 px-2 border-2 border-green-700 shadow-slate-500 lg:gap-6 gap-3 rounded pt-3 md:text-center "
+            className=" bg-green-100 dark:bg-black lg:p-4 px-2 border-2 border-green-700 shadow-slate-500 lg:gap-6 gap-3 rounded pt-3 md:text-center  "
           >
             <Navbar.Brand
               as={Link}
@@ -19,7 +19,7 @@ function NavbarComponent() {
               className=" lg:gap-x-4 gap-x-3 lg:text-3xl "
             >
               <Avatar alt="User Profile" img={profilePic} rounded />
-              <span className="self-center whitespace-nowrap text-green-700 dark:text-green-500 font-bold ">
+              <span className="self-center whitespace-nowrap text-green-700 dark:text-green-500 font-bold hover:animate-bounce">
                 <span className="googlefont"> Mohamed</span>{" "}
                 <br className="hidden md:block lg:hidden" />{" "}
                 <span className="googlefont">Sharukhan</span>

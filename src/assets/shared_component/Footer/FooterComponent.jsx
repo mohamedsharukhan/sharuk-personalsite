@@ -30,7 +30,7 @@ function FooterComponent() {
                       Mohamed Sharukhan
                     </span>
                   </div>
-                  <p className=" hover:text-green-400 dark:text-gray-400 flex justify-center  align-middle content-center gap-x-4 text-wrap">
+                  <p className="   hover:text-green-700 hover:dark:text-green-400 dark:text-gray-400 flex justify-center  align-middle content-center gap-x-4 text-wrap">
                     {" "}
                     <span>
                       <IoLocationSharp className="w-6 h-6"/>
@@ -50,10 +50,10 @@ function FooterComponent() {
                       className="hover:text-green-700"
                     />
                     <Footer.LinkGroup col>
-                      <Footer.Link href="#contact" className="hover:text-green-700">
+                      <Footer.Link href="#contact" className="  hover:text-green-700 hover:dark:text-green-400">
                         Contact
                       </Footer.Link>
-                      <Footer.Link href="#about" className="hover:text-green-700">
+                      <Footer.Link href="#about" className="  hover:text-green-700 hover:dark:text-green-400">
                         About
                       </Footer.Link>
                     </Footer.LinkGroup>
