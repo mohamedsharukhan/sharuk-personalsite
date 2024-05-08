@@ -56,13 +56,11 @@ function ResumeComponent() {
                               {detail.summary}
                             </span>
                           </p>
-
+                          <a href={detail.file} target="_blank dawnload">
                           <BsArrowRightCircle
                             className="hover:animate-bounce w-8 h-8 text-green-700 hover:text-green-900 hover:dark:text-green-400"
-                            onClick={() => {
-                              window.location.href = detail.file;
-                            }}
                           />
+                          </a>
                         </Card>
                       ))}
                     </div>
