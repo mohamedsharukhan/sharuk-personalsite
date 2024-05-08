@@ -43,8 +43,8 @@ function ContactComponent() {
 
   return (
     <main className="flex justify-center " id="contact">
-      <section className="container bg-green-50">
-        <Card className="bg-green-50 ">
+      <section className="container bg-green-100  dark:bg-black">
+        <Card className="bg-green-50 dark:shadow-white shadow-slate-900">
           <p className=" tracking-[0.5em]  pb-6 gap-1 text-center">CONTACT</p>
           <div className="grid lg:grid-flow-col lg:grid-cols-2 justify-center gap-4">
             <div className="relative w-full h-full">
@@ -55,7 +55,7 @@ function ContactComponent() {
               />
             </div>
             <div className="">
-              <Card className="bg-green-50 py-12 shadow-white relative">
+              <Card className="bg-green-50 py-12 dark:shadow-white shadow-slate-900 relative">
                 <h2 className="text-3xl md:text-4xl text-green-700 font-bold googlefont shadow-slate-600 text-center py-4 dark:text-green-400 hover:animate-bounce">
                   Contact With Me
                 </h2>

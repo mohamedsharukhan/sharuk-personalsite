@@ -10,7 +10,7 @@ import { IoLocationSharp } from "react-icons/io5";
 function FooterComponent() {
   return (
     <main className="flex flex-row justify-center ">
-      <section className=" w-full bottom-0 z-20">
+      <section className=" w-full bottom-0 z-20 ">
         <div>
           <Footer
             color="green-700 "
@@ -26,14 +26,14 @@ function FooterComponent() {
                       img={profilePic}
                       rounded
                     />
-                    <span className="self-center whitespace-nowrap text-green-700 dark:text-green-500 font-bold googlefont">
+                    <span className="self-center whitespace-nowrap text-green-700 dark:text-green-500 font-bold googlefont hover:animate-bounce ">
                       Mohamed Sharukhan
                     </span>
                   </div>
-                  <p className="   hover:text-green-700 hover:dark:text-green-400 dark:text-gray-400 flex justify-center  align-middle content-center gap-x-4 text-wrap">
+                  <p className="   hover:text-green-700 hover:dark:text-green-400 dark:text-gray-400 flex justify-center  align-middle content-center gap-x-4 text-wrap font-bold">
                     {" "}
                     <span>
-                      <IoLocationSharp className="w-6 h-6"/>
+                      <IoLocationSharp className="w-8 h-8 hover:animate-bounce"/>
                     </span>{" "}
                     <span className="text-sm">
                       8/124,Thiruvithamcode,

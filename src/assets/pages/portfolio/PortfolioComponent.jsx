@@ -5,20 +5,20 @@ import { projects } from "./project";
 function PortfolioComponent() {
   const project = projects;
   return (
-    <main className="flex justify-center" id="portfolio">
-      <section className="container bg-green-50 ">
-        <Card className="bg-green-50 shadow-white border-2 flex justify-center">
+    <main className="flex justify-center " id="portfolio">
+      <section className="container bg-green-100  dark:bg-black  ">
+        <Card className="bg-green-50 dark:shadow-white shadow-slate-900 flex justify-center">
           <div className="grid grid-flow-row justify-center">
             <p className="tracking-[0.5em] py-4 gap-1 text-center">PORTFOLIO</p>
             <h2 className="text-3xl md:text-4xl text-green-700 font-bold googlefont text-center pb-16 dark:text-green-500 hover:animate-bounce pt-6">
               My Portfolio
             </h2>
-            <Card className="shadow-white bg-green-50">
+            <Card className="dark:shadow-white shadow-slate-900 bg-green-50">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-9  justify-center  ">
                 {project.map((data, index) => (
                   <div key={index}>
                     <Card
-                      className="max-w-sm min-w-[15rem] min-h-[20rem] shadow-white bg-green-50 border-2 grid justify-start  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-green-300 duration-300 group      "
+                      className="max-w-sm min-w-[15rem] min-h-[20rem] dark:shadow-white shadow-slate-900 bg-green-50 border-2 hover:border-green-300 grid justify-start  transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-green-300 duration-300 group      "
                       imgAlt="project img"
                       imgSrc={""}
                     >

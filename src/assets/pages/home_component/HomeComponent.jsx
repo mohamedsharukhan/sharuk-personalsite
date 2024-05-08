@@ -4,11 +4,10 @@ import PortfolioComponent from "../portfolio/PortfolioComponent";
 import ProfileComponent from "../profile-component/ProfileComponent";
 import ResumeComponent from "../resum-component/ResumeComponent";
 import SkillsComponent from "../skills-component/SkillsComponent";
-
 function HomeComponent() {
   return (
-    <main className="flex justify-center bg-gradient-to-r from-green-400 to-blue-400 bg-no-repeat">
-      <section className=" container  bg-green-50 dark:text-slate-100">
+    <main className="flex justify-center bg-green-100  dark:bg-black py-4 dark:text-white">
+      <section className=" container  bg-green-100  dark:bg-black  grid gap-4 ">
         <ProfileComponent />
         <AboutComponent />
         <ResumeComponent />

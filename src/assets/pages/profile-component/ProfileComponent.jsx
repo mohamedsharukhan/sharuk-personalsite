@@ -26,10 +26,10 @@ function ProfileComponent() {
   }, [typedString, words, currentWordIndex]);
   return (
     <main className=" flex  justify-center ">
-      <section className=" container bg-green-50">
-        <Card className=" bg-green-50 mt-[76px]">
+      <section className=" container bg-green-100  dark:bg-black">
+        <Card className=" bg-green-50 mt-[76px] dark:shadow-white shadow-slate-900">
           <div className="grid lg:grid-flow-col lg:grid-cols-2 gap-3">
-            <div className=" rounded  grid content-center gap-12 text-center grig justify-center  items-center  h-[83vh] shadow-white  border-2">
+            <div className=" rounded  grid content-center gap-12 text-center grig justify-center  items-center  h-[83vh] dark:shadow-white shadow-slate-900  border-2 ">
               <p className=" tracking-[0.5em]  p-3 gap-1 ">
                 WELCOME TO MY WORLD
               </p>

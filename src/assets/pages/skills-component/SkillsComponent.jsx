@@ -5,12 +5,12 @@ import { skills } from "../skills-component/skills";
 function SkillsComponent() {
   return (
     <main className=" flex  justify-center" id="skills">
-      <section className=" container bg-green-50">
-        <Card className=" bg-green-50">
+      <section className=" container bg-green-100  dark:bg-black">
+        <Card className=" bg-green-50 dark:shadow-white shadow-slate-900">
           <p className=" tracking-[0.5em]  py-4 gap-1 text-center">SKILLS</p>
           <div className="grid lg:grid-flow-col lg:grid-cols-2 justify-center items-center align-middle gap-4 ">
             <div>
-              <Card className="shadow-white bg-green-50">
+              <Card className="dark:shadow-white shadow-slate-900 bg-green-50 ">
                 <h2 className="text-3xl md:text-4xl text-green-700 font-bold googlefont text-center pb-6 dark:text-green-500 shadow-white hover:animate-bounce pt-6">
                   Development Skills
                 </h2>

@@ -1,14 +1,14 @@
 import React from "react";
 import { Card, Tabs } from "flowbite-react";
 import { BsArrowRightCircle } from "react-icons/bs";
-import{resumeDetails} from "./resume"
+import { resumeDetails } from "./resume";
 function ResumeComponent() {
-  const resume = resumeDetails
+  const resume = resumeDetails;
 
   return (
     <main className="flex justify-center " id="resume">
-      <section className="container bg-green-50">
-        <Card className="bg-green-50 shadow-white gap-y-6 ">
+      <section className="container bg-green-100  dark:bg-black ">
+        <Card className="bg-green-50  gap-y-6 dark:shadow-white shadow-slate-900 ">
           <p className="tracking-[0.5em] py-4 gap-1 text-center">My Resume</p>
           <div className="">
             <Tabs
@@ -31,7 +31,7 @@ function ResumeComponent() {
                       {data.details.map((detail, idx) => (
                         <Card
                           key={idx}
-                          className=" shadow-white gap-y-12 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-green-300 duration-300 "
+                          className=" dark:shadow-white shadow-slate-900 gap-y-12 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 hover:bg-green-300 duration-300 "
                           imgSrc={detail.img}
                           horizontal
                         >
@@ -52,9 +52,9 @@ function ResumeComponent() {
                             </span>
                           </p>
                           <p className="font-normal text-gray-700 dark:text-gray-400 flex text-wrap">
-                          <span className="text-wrap hover:text-green-700 hover:dark:text-green-400">
-                          {detail.summary}
-                            </span>                          
+                            <span className="text-wrap hover:text-green-700 hover:dark:text-green-400">
+                              {detail.summary}
+                            </span>
                           </p>
 
                           <BsArrowRightCircle
