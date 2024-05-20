@@ -19,7 +19,7 @@ export const projects = [
         ProfessionalSummary:"Comprehensive E-commerce Solution: Engineered a dynamic e-commerce platform from scratch, leveraging HTML, Tailwind CSS, JavaScript, React.js, Redux, Node.js, Express.js, SQL, and JWT authentication.Scalable Backend Architecture: Orchestrated a resilient backend infrastructure using Node.js and Express.js, integrating SQL databases for efficient data management and implementing Multer for seamless file uploads and JWT for secure user authentication.Enhanced Performance and User Experience: Optimized website responsiveness and user engagement through Axios for API interaction, Tailwind CSS for responsive design, and Redux for streamlined state management, culminating in a seamless and intuitive e-commerce journey.",
         skills:
           "HTML, TAILWIND CSS, JAVASCRIPT, REACT JS, REDUX, NODE JS, EXPRESS JS, SQL",
-        link: "",
+        link: "https://drive.google.com/file/d/1WTanwksp6kTk_CPg9j3bjrkjc97ZpUR1/view?usp=sharing",
       },
     {
       img: "",
