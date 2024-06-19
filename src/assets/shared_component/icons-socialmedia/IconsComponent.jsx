@@ -35,7 +35,7 @@ function IconsComponent() {
             {" "}
             {icons.map((data, index) => (
               <a href={data.link} target="_blank" key={index} className="">
-                <Card className="hover:animate-bounce duration-300 delay-300 shadow-slate-300 shadow-lg hover:bg-green-300 hover:shadow-green-700 dark:shadow-white dark:bg-white dark:text-black inline-block ">
+                <Card className="hover:animate-bounce duration-300 delay-300 shadow-slate-300 shadow-lg hover:bg-green-300 hover:shadow-green-700 dark:shadow-slate-400 dark:bg-white dark:text-black inline-block ">
                   {" "}
                   {data.icon}
                 </Card>
